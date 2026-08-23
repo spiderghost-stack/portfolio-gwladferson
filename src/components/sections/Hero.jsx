@@ -41,7 +41,7 @@ export default function Hero() {
       </p>
       
       <h1 className="font-orbitron text-[clamp(2rem,5vw,4.5rem)] font-black text-white leading-[1.1] mb-5">
-        Nouésèwa Roesnay Gwladferson Scharaf-Dine <span className="text-cyan text-glow-cyan">WENON</span>
+        Roesnay Gwladferson <span className="text-cyan text-glow-cyan">WENON</span>
       </h1>
       
       <div className="font-sharetech text-[clamp(1rem,2vw,1.35rem)] text-cyan text-glow-cyan h-[2em] flex items-center gap-[10px] mb-[36px]">
