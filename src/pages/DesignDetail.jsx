@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Palette, Eye } from 'lucide-react';
+import { ArrowLeft, Palette, Eye, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function DesignDetail() {
@@ -99,6 +99,14 @@ export default function DesignDetail() {
                   ))}
                 </div>
               </div>
+
+              <a 
+                href={`/assets/${projectInfo.img}`} 
+                download 
+                className="w-full flex items-center justify-center gap-2 font-sharetech text-[0.85rem] font-bold py-3 rounded bg-gradient-to-r from-green to-cyan text-bg hover:opacity-90 transition-opacity tracking-[1px] shadow-[0_0_15px_rgba(0,255,231,0.2)]"
+              >
+                <Download size={16} /> TÉLÉCHARGER L'IMAGE
+              </a>
 
               <Link to="/#projects" className="block w-full text-center font-sharetech text-[0.85rem] py-3 rounded border border-muted text-muted hover:text-white hover:border-white transition-colors tracking-[1px]">
                 ← Voir tous les projets

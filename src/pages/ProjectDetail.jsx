@@ -21,7 +21,7 @@ export default function ProjectDetail() {
         'Téléchargement de CV en PDF',
         'Design 100% responsive'
       ],
-      liveUrl: '#',
+      liveUrl: 'https://portfolio-gwladferson.onrender.com',
       githubUrl: 'https://github.com/spiderghost-stack/portfolio-gwladferson'
     },
     'blog': {
@@ -34,7 +34,7 @@ export default function ProjectDetail() {
         'Optimisation SEO automatique',
         'Système de tags et catégories'
       ],
-      liveUrl: 'https://github.com/spiderghost-stack/blog',
+      liveUrl: 'https://mindlog-zgzb.onrender.com',
       githubUrl: 'https://github.com/spiderghost-stack/blog'
     },
     'fast-connect': {
@@ -47,7 +47,7 @@ export default function ProjectDetail() {
         'Authentification sécurisée avec JWT',
         'Recherche de contacts par compétences'
       ],
-      liveUrl: '#',
+      liveUrl: 'https://fast-connect.onrender.com',
       githubUrl: '#'
     }
   };

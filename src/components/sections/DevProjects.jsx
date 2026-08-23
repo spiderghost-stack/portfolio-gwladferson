@@ -14,7 +14,7 @@ export default function DevProjects() {
       stack: ['React', 'Tailwind', 'Framer Motion'],
       type: 'WEB',
       icon: <Globe className="text-[#60aaff]" size={20} />,
-      liveUrl: '#'
+      liveUrl: 'https://portfolio-gwladferson.onrender.com'
     },
     {
       id: 'blog',
@@ -24,7 +24,7 @@ export default function DevProjects() {
       stack: ['TypeScript', 'React', 'Next.js'],
       type: 'WEB',
       icon: <Code2 className="text-[#60aaff]" size={20} />,
-      liveUrl: 'https://github.com/spiderghost-stack/blog'
+      liveUrl: 'https://mindlog-zgzb.onrender.com'
     },
     {
       id: 'fast-connect',
@@ -34,7 +34,7 @@ export default function DevProjects() {
       stack: ['React', 'Node.js', 'Socket.io'],
       type: 'WEB',
       icon: <Wifi className="text-[#60aaff]" size={20} />,
-      liveUrl: '#'
+      liveUrl: 'https://fast-connect.onrender.com'
     }
   ];
 

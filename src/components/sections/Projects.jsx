@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ZoomIn } from 'lucide-react';
+import { ZoomIn, Download } from 'lucide-react';
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -89,12 +89,22 @@ export default function Projects() {
             <div className="p-[20px_22px_22px]">
               <div className="font-sharetech text-[0.68rem] font-bold tracking-[2px] uppercase text-cyan mb-1.5">{p.cat}</div>
               <h3 className="font-orbitron font-bold text-[0.95rem] text-white mb-2">{p.title}</h3>
-              <Link 
-                to={`/design/${p.id}`}
-                className="mt-3 px-[18px] py-[7px] bg-transparent border border-cyan text-cyan rounded-full font-sharetech text-[0.72rem] tracking-[1px] flex items-center gap-1.5 transition-colors hover:bg-cyan/5 w-fit"
-              >
-                <ZoomIn size={14} /> {t('projects.seeMore')}
-              </Link>
+              <div className="flex gap-2.5 mt-3">
+                <Link 
+                  to={`/design/${p.id}`}
+                  className="px-[18px] py-[7px] bg-transparent border border-cyan text-cyan rounded-full font-sharetech text-[0.72rem] tracking-[1px] flex items-center gap-1.5 transition-colors hover:bg-cyan/5"
+                >
+                  <ZoomIn size={14} /> {t('projects.seeMore')}
+                </Link>
+                <a 
+                  href={`/assets/${p.img}`} 
+                  download 
+                  className="px-[12px] py-[7px] bg-transparent border border-green text-green rounded-full flex items-center justify-center transition-colors hover:bg-green/5"
+                  title="Télécharger"
+                >
+                  <Download size={14} />
+                </a>
+              </div>
             </div>
           </div>
         ))}
