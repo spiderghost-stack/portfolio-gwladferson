@@ -6,26 +6,28 @@ export default function About() {
 
   return (
     <section id="about" className="relative z-10 px-[8vw] py-[100px]">
-      <p className="font-sharetech text-[0.75rem] text-green tracking-[4px] uppercase mb-[10px] text-glow-green">
-        // {t('about.tag')}
-      </p>
-      <h2 className="font-orbitron text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-[50px] leading-[1.2]">
-        {t('about.title')} <span className="text-cyan text-glow-cyan">{t('about.titleHighlight')}</span>
-      </h2>
-      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
-        <div className="text-muted text-[1.05rem] space-y-5">
-          <p>{t('about.text1')}</p>
-          <p>{t('about.text2')}</p>
-          <p>{t('about.text3')}</p>
-          
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href="/assets/CV_Gwladferson.pdf" target="_blank" rel="noopener noreferrer" className="font-sharetech text-[0.85rem] tracking-[2px] px-6 py-[12px] rounded border border-cyan text-cyan hover:bg-cyan/5 hover:shadow-[0_0_8px_rgba(0,255,231,0.15)] transition-all flex items-center gap-2">
-              <Eye size={16} /> {t('about.cvView')}
-            </a>
-            <a href="/assets/CV_Gwladferson.pdf" download className="font-sharetech text-[0.85rem] tracking-[2px] px-6 py-[12px] rounded border border-green text-green hover:bg-green/5 hover:shadow-[0_0_8px_rgba(0,255,136,0.15)] transition-all flex items-center gap-2">
-              <Download size={16} /> {t('about.cvDownload')}
-            </a>
+        {/* Colonne Gauche - STICKY */}
+        <div className="md:sticky md:top-[120px] self-start">
+          <p className="font-sharetech text-[0.75rem] text-green tracking-[4px] uppercase mb-[10px] text-glow-green">
+            // {t('about.tag')}
+          </p>
+          <h2 className="font-orbitron text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-[50px] leading-[1.2]">
+            {t('about.title')} <span className="text-cyan text-glow-cyan">{t('about.titleHighlight')}</span>
+          </h2>
+          <div className="text-muted text-[1.05rem] space-y-5">
+            <p>{t('about.text1')}</p>
+            <p>{t('about.text2')}</p>
+            <p>{t('about.text3')}</p>
+            
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href="/assets/CV_Gwladferson.pdf" target="_blank" rel="noopener noreferrer" className="font-sharetech text-[0.85rem] tracking-[2px] px-6 py-[12px] rounded border border-cyan text-cyan hover:bg-cyan/5 hover:shadow-[0_0_8px_rgba(0,255,231,0.15)] transition-all flex items-center gap-2">
+                <Eye size={16} /> {t('about.cvView')}
+              </a>
+              <a href="/assets/CV_Gwladferson.pdf" download className="font-sharetech text-[0.85rem] tracking-[2px] px-6 py-[12px] rounded border border-green text-green hover:bg-green/5 hover:shadow-[0_0_8px_rgba(0,255,136,0.15)] transition-all flex items-center gap-2">
+                <Download size={16} /> {t('about.cvDownload')}
+              </a>
+            </div>
           </div>
         </div>
         
