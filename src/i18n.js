@@ -19,7 +19,7 @@ const resources = {
           "Développeur Web Full Stack",
           "Graphiste Designer Créatif"
         ],
-        "desc": "Étudiant en Physique Fondamentale · Graphiste Designer · Développeur Web. À l'intersection de la science, de l'art et du code — je construis des expériences qui font réfléchir.",
+        "desc": "Étudiant en Physique Fondamentale · Graphiste Designer · Développeur Web. À l'intersection de la science, de l'art et du code, je construis des expériences qui font réfléchir.",
         "btnProjects": "VOIR MES PROJETS",
         "btnContact": "CONTACT",
         "statProjects": "PROJETS",
@@ -197,7 +197,7 @@ const resources = {
         "title": "About",
         "titleHighlight": "me",
         "tag": "WHO AM I",
-        "text1": "I am Nouésèwa Roesnay Gwladferson Scharaf-Dine — curious scientist, passionate creative, and rigorous developer. These three worlds feed off each other.",
+        "text1": "I am Nouésèwa Roesnay Gwladferson Scharaf-Dine curious scientist, passionate creative, and rigorous developer. These three worlds feed off each other.",
         "text2": "The rigor of Fundamental Physics, the creativity of graphic design, and the logic of web development: I combine them to create unique experiences at the intersection of science, art, and code.",
         "text3": "Drawn to innovation, I work on interactive simulations, futuristic interfaces, and intelligent systems. For me, technology should convey emotion and tell a vision.",
         "cvView": "View my Resume",
