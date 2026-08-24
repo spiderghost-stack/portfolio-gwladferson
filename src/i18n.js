@@ -30,7 +30,7 @@ const resources = {
         "title": "À propos de",
         "titleHighlight": "moi",
         "tag": "WHO AM I",
-        "text1": "Je suis Nouésèwa Roesnay Gwladferson Scharaf-Dine — scientifique curieux, créatif passionné et développeur rigoureux. Ces trois univers se nourrissent mutuellement.",
+        "text1": "Je suis Nouésèwa Roesnay Gwladferson Scharaf-Dine ,scientifique curieux, créatif passionné et développeur rigoureux. Ces trois univers se nourrissent mutuellement.",
         "text2": "La rigueur de la Physique Fondamentale, la créativité du design graphique et la logique du développement web : je les combine pour créer des expériences uniques à l'intersection de la science, de l'art et du code.",
         "text3": "Attiré par l'innovation, je travaille sur des simulations interactives, des interfaces futuristes et des systèmes intelligents. Pour moi, la technologie doit transmettre une émotion et raconter une vision.",
         "cvView": "Voir mon CV",
