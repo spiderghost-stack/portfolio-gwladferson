@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-[5vw] py-[18px] bg-[#020b18]/85 border-b border-border backdrop-blur-md">
         <div className="font-orbitron text-[1.1rem] font-black text-cyan tracking-[3px] z-[101] flex items-center gap-2">
           <Ghost size={24} className="text-cyan" /> 
-          <span className="text-glow-cyan">SPIDER_GOST</span>
+          <span className="text-glow-cyan">SPIDER_GHOST</span>
         </div>
         
         <div className="flex items-center gap-6 md:gap-8">
