@@ -34,7 +34,7 @@ export default function About() {
         <div className="flex flex-col gap-8">
           {/* Profile Card */}
           <div className="bg-bg2 border border-border rounded-lg overflow-hidden shadow-[0_0_20px_rgba(0,255,231,0.03)] p-4 flex flex-col items-center justify-center">
-             <img src="/assets/profile.png" alt="Profile" className="w-full h-auto rounded object-cover object-top max-h-[400px]" />
+             <img src="/assets/profile.png" alt="Gwladferson Wenon — Étudiant en Physique Fondamentale, développeur web et graphiste designer" className="w-full h-auto rounded object-cover object-top max-h-[400px]" />
           </div>
 
           {/* Terminal */}

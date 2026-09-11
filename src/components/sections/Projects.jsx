@@ -83,7 +83,7 @@ export default function Projects() {
         {filteredProjects.map(p => (
           <div key={p.id} className="rounded-xl overflow-hidden bg-bg2 border border-border transition-all hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(0,255,231,0.04)] hover:border-cyan/20 group cursor-pointer">
             <div className="relative h-[220px] overflow-hidden">
-              <img src={`/assets/${p.img}`} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={`/assets/${p.img}`} alt={`${p.title} — ${p.cat} par Gwladferson Wenon`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute bottom-0 left-0 right-0 h-[60px] bg-gradient-to-t from-[#020b18]/50 to-transparent pointer-events-none z-10"></div>
             </div>
             <div className="p-[20px_22px_22px]">

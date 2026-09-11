@@ -1,0 +1,8 @@
+# robots.txt — Portfolio Gwladferson Wenon
+# https://portfolio-gwladferson.onrender.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portfolio-gwladferson.onrender.com/sitemap.xml

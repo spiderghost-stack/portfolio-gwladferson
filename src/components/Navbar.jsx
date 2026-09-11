@@ -32,7 +32,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a href={link.href} className="font-sharetech text-[0.85rem] text-muted tracking-[2px] transition-colors hover:text-cyan hover:text-glow-cyan">
-                  // {link.label}
+                  {link.label}
                 </a>
               </li>
             ))}
@@ -69,7 +69,7 @@ export default function Navbar() {
                 className="font-orbitron text-xl text-white tracking-[2px] transition-colors hover:text-cyan hover:text-glow-cyan"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                // {link.label}
+                {link.label}
               </a>
             </li>
           ))}
