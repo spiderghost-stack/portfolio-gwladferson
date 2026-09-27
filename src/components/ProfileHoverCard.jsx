@@ -1,10 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const ProfileHoverCard = () => {
+  const [isRevealed, setIsRevealed] = useState(false);
+
   return (
     <StyledWrapper>
-      <div className="card">GWLADFERSON</div>
+      <button
+        type="button"
+        className={`card${isRevealed ? ' is-revealed' : ''}`}
+        aria-expanded={isRevealed}
+        onClick={() => setIsRevealed((revealed) => !revealed)}
+      >
+        GWLADFERSON
+      </button>
     </StyledWrapper>
   );
 }
@@ -16,6 +26,7 @@ const StyledWrapper = styled.div`
   width: 100%;
 
   .card {
+    appearance: none;
     position: relative;
     width: min(400px, 100%);
     aspect-ratio: 17 / 23;
@@ -32,6 +43,8 @@ const StyledWrapper = styled.div`
     border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 0 28px rgba(0,255,231,0.16);
+    padding: 0;
+    text-align: center;
   }
 
   .card::before,
@@ -66,21 +79,27 @@ const StyledWrapper = styled.div`
     z-index: 10;
   }
 
-  .card:hover::before,
-  .card:hover::after {
+  .card.is-revealed::before,
+  .card.is-revealed::after {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
   }
 
-  // Appareils tactiles : pas de hover, photo affichée en plein par défaut
-  @media (hover: none) {
-    .card::after {
+  @media (hover: hover) {
+    .card:hover::before,
+    .card:hover::after {
       width: 100%;
       height: 100%;
       border-radius: 15px;
+      transition: all 0.5s ease-in-out;
     }
+  }
+
+  .card:focus-visible {
+    outline: 2px solid var(--cyan, #00ffe7);
+    outline-offset: 4px;
   }
 `;
 
