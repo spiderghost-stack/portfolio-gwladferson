@@ -17,8 +17,8 @@ const StyledWrapper = styled.div`
 
   .card {
     position: relative;
-    width: 280px;
-    height: 380px;
+    width: min(400px, 100%);
+    aspect-ratio: 17 / 23;
     background: var(--bg2, #040f20);
     border: 1px solid var(--border, rgba(0,255,231,0.15));
     display: flex;
@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(0,255,231,0.05);
+    box-shadow: 0 0 28px rgba(0,255,231,0.16);
   }
 
   .card::before,
@@ -56,6 +56,8 @@ const StyledWrapper = styled.div`
   .card::after {
     bottom: 0;
     left: 0;
+    width: 38%;
+    height: 46%;
     border-radius: 0 100% 0 15px;
     background-image: url('/assets/profile.png');
     background-size: cover;
@@ -70,6 +72,15 @@ const StyledWrapper = styled.div`
     height: 100%;
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
+  }
+
+  // Appareils tactiles : pas de hover, photo affichée en plein par défaut
+  @media (hover: none) {
+    .card::after {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
   }
 `;
 

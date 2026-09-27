@@ -1,6 +1,87 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { Menu, X, Ghost } from 'lucide-react';
+import styled from 'styled-components';
+
+const LanguageSwitch = styled.label`
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 30px;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 255, 231, 0.3);
+    border-radius: 999px;
+    background: #041522;
+    color: #7893a7;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  span::before,
+  span::after {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 36px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all 0.25s ease;
+  }
+
+  span::before {
+    content: 'EN';
+    right: 4px;
+  }
+
+  span::after {
+    content: 'FR';
+    left: 3px;
+    border-radius: 999px;
+    background: #00ffe7;
+    color: #020b18;
+    box-shadow: 0 0 10px rgba(0, 255, 231, 0.35);
+  }
+
+  input:checked + span::before {
+    right: auto;
+    left: 4px;
+  }
+
+  input:checked + span::after {
+    left: 43px;
+    content: 'EN';
+  }
+
+  input:checked + span::before {
+    content: 'FR';
+  }
+
+  input:focus-visible + span {
+    outline: 2px solid #00ffe7;
+    outline-offset: 3px;
+  }
+`;
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -38,17 +119,15 @@ export default function Navbar() {
             ))}
           </ul>
           
-          <div className="flex gap-2 font-sharetech text-[0.7rem] text-muted z-[101]">
-            <button 
-              onClick={() => changeLanguage('fr')} 
-              className={`transition-colors ${i18n.language === 'fr' ? 'text-cyan text-glow-cyan' : 'hover:text-cyan'}`}
-            >FR</button>
-            <span>/</span>
-            <button 
-              onClick={() => changeLanguage('en')} 
-              className={`transition-colors ${i18n.language === 'en' ? 'text-cyan text-glow-cyan' : 'hover:text-cyan'}`}
-            >EN</button>
-          </div>
+          <LanguageSwitch title="Changer de langue / Change language">
+            <input
+              type="checkbox"
+              checked={i18n.language.startsWith('en')}
+              onChange={(event) => changeLanguage(event.target.checked ? 'en' : 'fr')}
+              aria-label={i18n.language.startsWith('en') ? 'Switch to French' : 'Passer en anglais'}
+            />
+            <span aria-hidden="true" />
+          </LanguageSwitch>
 
           <button 
             className="lg:hidden text-cyan z-[101]"

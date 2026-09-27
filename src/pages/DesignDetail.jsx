@@ -46,8 +46,8 @@ export default function DesignDetail() {
   if (!projectInfo || !projectTranslations || typeof projectTranslations !== 'object') {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center pt-24 text-white gap-4">
-        <h2 className="font-orbitron text-2xl">Projet non trouvé</h2>
-        <Link to="/" className="text-cyan underline font-sharetech">← Retour à l'accueil</Link>
+        <h2 className="font-orbitron text-2xl">{t('detail.notFound')}</h2>
+        <Link to="/" className="text-cyan underline font-sharetech">← {t('detail.back')}</Link>
       </div>
     );
   }
@@ -55,7 +55,7 @@ export default function DesignDetail() {
   return (
     <div className="min-h-screen pt-[120px] pb-[80px] px-[8vw] bg-bg relative z-10">
       <Link to="/" className="font-sharetech text-[0.85rem] text-muted hover:text-cyan mb-8 inline-flex items-center gap-2 transition-colors">
-        <ArrowLeft size={16} /> Retour à l'accueil
+        <ArrowLeft size={16} /> {t('detail.back')}
       </Link>
       
       <div className="bg-bg2 border border-border rounded-xl overflow-hidden shadow-[0_0_30px_rgba(0,255,231,0.03)] mt-4">
@@ -76,7 +76,7 @@ export default function DesignDetail() {
 
               <div>
                 <h2 className="font-orbitron text-lg text-white mb-4 border-b border-border pb-2 flex items-center gap-2">
-                  <Eye size={18} className="text-cyan" /> Description détaillée
+                  <Eye size={18} className="text-cyan" /> {t('detail.detailed')}
                 </h2>
                 <p className="text-muted text-[0.95rem] leading-[1.85]">{projectTranslations.longDesc}</p>
               </div>
@@ -85,13 +85,13 @@ export default function DesignDetail() {
             {/* Sidebar */}
             <div className="space-y-6">
               <div className="bg-[#010a16] border border-border rounded-lg p-6">
-                <h3 className="font-sharetech text-white mb-4 tracking-[1px]">CATÉGORIE</h3>
+                <h3 className="font-sharetech text-white mb-4 tracking-[1px]">{t('detail.category')}</h3>
                 <span className="font-sharetech text-[0.8rem] px-3 py-1.5 rounded border border-cyan/20 text-cyan bg-cyan/5 tracking-[1px]">{projectInfo.category}</span>
               </div>
 
               <div className="bg-[#010a16] border border-border rounded-lg p-6">
                 <h3 className="font-sharetech text-white mb-4 tracking-[1px] flex items-center gap-2">
-                  <Palette size={16} className="text-[#ff6b35]" /> OUTILS UTILISÉS
+                  <Palette size={16} className="text-[#ff6b35]" /> {t('detail.tools')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {projectInfo.tools.map(tool => (
@@ -105,11 +105,11 @@ export default function DesignDetail() {
                 download 
                 className="w-full flex items-center justify-center gap-2 font-sharetech text-[0.85rem] font-bold py-3 rounded bg-gradient-to-r from-green to-cyan text-bg hover:opacity-90 transition-opacity tracking-[1px] shadow-[0_0_15px_rgba(0,255,231,0.2)]"
               >
-                <Download size={16} /> TÉLÉCHARGER L'IMAGE
+                <Download size={16} /> {t('detail.downloadImage')}
               </a>
 
               <Link to="/#projects" className="block w-full text-center font-sharetech text-[0.85rem] py-3 rounded border border-muted text-muted hover:text-white hover:border-white transition-colors tracking-[1px]">
-                ← Voir tous les projets
+                ← {t('detail.allProjects')}
               </Link>
             </div>
           </div>

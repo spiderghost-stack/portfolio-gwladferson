@@ -6,7 +6,7 @@ const SocialCard = () => {
     <StyledWrapper>
       <div className="card">
         <ul>
-          <li className="iso-pro">
+          <li className="iso-pro facebook">
             <span />
             <span />
             <span />
@@ -15,7 +15,7 @@ const SocialCard = () => {
                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg></a>
             <div className="text">Facebook</div>
           </li>
-          <li className="iso-pro">
+          <li className="iso-pro linkedin">
             <span />
             <span />
             <span />
@@ -26,7 +26,7 @@ const SocialCard = () => {
             </a>
             <div className="text">LinkedIn</div>
           </li>
-          <li className="iso-pro">
+          <li className="iso-pro instagram">
             <span />
             <span />
             <span />
@@ -154,6 +154,19 @@ const StyledWrapper = styled.div`
   .iso-pro:hover span:nth-child(3) {
     opacity: 0.6;
     transform: translate(10px, -10px);
-  }`;
+  }
+
+  /* Couleurs officielles des marques */
+  .facebook .svg { color: #1877f2; }
+  .facebook .text { color: #1877f2; }
+  .facebook span { color: #1877f2; border-color: #1877f2; }
+
+  .linkedin .svg { color: #0a66c2; }
+  .linkedin .text { color: #0a66c2; }
+  .linkedin span { color: #0a66c2; border-color: #0a66c2; }
+
+  .instagram .svg { color: #e4405f; }
+  .instagram .text { color: #e4405f; }
+  .instagram span { color: #e4405f; border-color: #e4405f; }`;
 
 export default SocialCard;

@@ -131,23 +131,65 @@ const resources = {
             "cat": "Web App",
             "desc": "Site portfolio complet avec animations canvas, typewriter, scroll reveal, filtres dynamiques et design cyberpunk. Refait en React et Tailwind.",
             "longDesc": "Ce portfolio a été entièrement repensé et reconstruit avec React et Tailwind CSS. Il remplace la version précédente en HTML/CSS pur par une architecture modulaire et des animations fluides.",
-            "challenges": "Le principal défi a été de migrer l'intégralité du design original vers une architecture React modulaire tout en conservant l'identité visuelle cyberpunk."
+            "challenges": "Le principal défi a été de migrer l'intégralité du design original vers une architecture React modulaire tout en conservant l'identité visuelle cyberpunk.",
+            "features": [
+              "Design Cyberpunk avec effets néon",
+              "Système multilingue FR/EN complet",
+              "Animations au défilement avec Framer Motion",
+              "Filtres dynamiques pour le portfolio graphique",
+              "Pages de détail pour chaque projet",
+              "Formulaire de contact Gmail + WhatsApp",
+              "Téléchargement de CV en PDF",
+              "Design 100% responsive"
+            ]
           },
           "blog": {
             "title": "Blog Personnel",
             "cat": "Web App",
             "desc": "Un blog complet développé avec TypeScript pour partager des articles techniques, des tutoriels et des réflexions personnelles.",
             "longDesc": "Ce blog a été conçu comme une plateforme pour documenter mon parcours d'apprentissage et partager mes connaissances. Développé en TypeScript avec React et Next.js.",
-            "challenges": "Implémenter un système de rendu MDX performant avec coloration syntaxique tout en maintenant un temps de chargement rapide."
+            "challenges": "Implémenter un système de rendu MDX performant avec coloration syntaxique tout en maintenant un temps de chargement rapide.",
+            "features": [
+              "Typage strict avec TypeScript",
+              "Rendu côté serveur (SSR) avec Next.js",
+              "Articles en MDX avec coloration syntaxique",
+              "Design responsive et mode sombre",
+              "Optimisation SEO automatique",
+              "Système de tags et catégories"
+            ]
           },
           "fast-connect": {
             "title": "Fast Connect",
             "cat": "Web App",
             "desc": "Application de mise en réseau rapide permettant aux utilisateurs de se connecter, partager des profils et collaborer en temps réel.",
             "longDesc": "Fast Connect est une application web de mise en réseau instantanée conçue pour faciliter les connexions entre professionnels, étudiants et créatifs. L'application utilise les WebSockets.",
-            "challenges": "Gérer la synchronisation en temps réel entre plusieurs clients connectés simultanément tout en maintenant la sécurité des données."
+            "challenges": "Gérer la synchronisation en temps réel entre plusieurs clients connectés simultanément tout en maintenant la sécurité des données.",
+            "features": [
+              "Connexion en temps réel via WebSockets",
+              "Messagerie instantanée entre utilisateurs",
+              "Partage de profils et QR codes",
+              "Notifications push en temps réel",
+              "Authentification sécurisée avec JWT",
+              "Recherche de contacts par compétences"
+            ]
           }
         }
+      },
+      "detail": {
+        "back": "Retour à l'accueil",
+        "notFound": "Projet non trouvé",
+        "summary": "Résumé",
+        "detailed": "Description détaillée",
+        "features": "Fonctionnalités clés",
+        "challenge": "Défi technique",
+        "projectLinks": "LIENS DU PROJET",
+        "viewSite": "VOIR LE SITE",
+        "sourceCode": "CODE SOURCE",
+        "stack": "STACK TECHNIQUE",
+        "category": "CATÉGORIE",
+        "tools": "OUTILS UTILISÉS",
+        "downloadImage": "TÉLÉCHARGER L'IMAGE",
+        "allProjects": "Voir tous les projets"
       },
       "contact": {
         "tag": "LET'S TALK",
@@ -298,23 +340,65 @@ const resources = {
             "cat": "Web App",
             "desc": "Complete portfolio site with canvas animations, typewriter, scroll reveal, dynamic filters and cyberpunk design. Rebuilt with React and Tailwind.",
             "longDesc": "This portfolio was completely redesigned and rebuilt with React and Tailwind CSS. It replaces the previous pure HTML/CSS version with a modular architecture and fluid animations.",
-            "challenges": "The main challenge was migrating the entire original design to a modular React architecture while keeping the cyberpunk visual identity."
+            "challenges": "The main challenge was migrating the entire original design to a modular React architecture while keeping the cyberpunk visual identity.",
+            "features": [
+              "Cyberpunk design with neon effects",
+              "Complete FR/EN multilingual system",
+              "Scroll animations with Framer Motion",
+              "Dynamic filters for the graphic portfolio",
+              "Detail pages for each project",
+              "Gmail + WhatsApp contact form",
+              "PDF resume download",
+              "100% responsive design"
+            ]
           },
           "blog": {
             "title": "Personal Blog",
             "cat": "Web App",
             "desc": "A complete blog developed with TypeScript to share technical articles, tutorials, and personal reflections.",
             "longDesc": "This blog was designed as a platform to document my learning journey and share my knowledge. Developed in TypeScript with React and Next.js.",
-            "challenges": "Implementing a high-performance MDX rendering system with syntax highlighting while maintaining fast loading times."
+            "challenges": "Implementing a high-performance MDX rendering system with syntax highlighting while maintaining fast loading times.",
+            "features": [
+              "Strict typing with TypeScript",
+              "Server-side rendering (SSR) with Next.js",
+              "MDX articles with syntax highlighting",
+              "Responsive design and dark mode",
+              "Automatic SEO optimization",
+              "Tags and categories system"
+            ]
           },
           "fast-connect": {
             "title": "Fast Connect",
             "cat": "Web App",
             "desc": "Fast networking application allowing users to connect, share profiles and collaborate in real-time.",
             "longDesc": "Fast Connect is an instant networking web application designed to facilitate connections between professionals, students, and creatives. The app uses WebSockets.",
-            "challenges": "Managing real-time synchronization between multiple simultaneously connected clients while maintaining data security."
+            "challenges": "Managing real-time synchronization between multiple simultaneously connected clients while maintaining data security.",
+            "features": [
+              "Real-time connection via WebSockets",
+              "Instant messaging between users",
+              "Profile sharing and QR codes",
+              "Real-time push notifications",
+              "Secure authentication with JWT",
+              "Contact search by skills"
+            ]
           }
         }
+      },
+      "detail": {
+        "back": "Back to home",
+        "notFound": "Project not found",
+        "summary": "Summary",
+        "detailed": "Detailed description",
+        "features": "Key features",
+        "challenge": "Technical challenge",
+        "projectLinks": "PROJECT LINKS",
+        "viewSite": "VIEW SITE",
+        "sourceCode": "SOURCE CODE",
+        "stack": "TECH STACK",
+        "category": "CATEGORY",
+        "tools": "TOOLS USED",
+        "downloadImage": "DOWNLOAD IMAGE",
+        "allProjects": "View all projects"
       },
       "contact": {
         "tag": "LET'S TALK",

@@ -13,10 +13,10 @@ export default function Contact() {
       <h2 className="font-orbitron text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-[50px] leading-[1.2]">
         {t('contact.title')} <span className="text-cyan text-glow-cyan">{t('contact.titleHighlight')}</span>
       </h2>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
-        <div>
-          <p className="text-muted mb-[30px] text-[1.05rem]">
+        <div className="order-2 md:order-1">
+          <p className="hidden md:block text-muted mb-[30px] text-[1.05rem]">
             {t('contact.desc')}
           </p>
           <ul className="list-none space-y-4">
@@ -37,13 +37,16 @@ export default function Contact() {
               <a href="https://wa.me/22901530795​76" target="_blank" rel="noopener noreferrer" className="ml-auto font-sharetech text-[0.7rem] px-3 py-1 border border-green text-green rounded hover:bg-green/5 hover:shadow-[0_0_6px_rgba(0,255,136,0.1)] transition-all">{t('contact.chat')}</a>
             </li>
           </ul>
-          
+
           <div className="mt-[40px] flex justify-start">
             <SocialCard />
           </div>
         </div>
-        
-        <form className="flex flex-col gap-4" action={`mailto:gwladferson@gmail.com`} method="POST" encType="text/plain">
+
+        <form className="flex flex-col gap-4 order-1 md:order-2" action={`mailto:gwladferson@gmail.com`} method="POST" encType="text/plain">
+          <p className="md:hidden text-muted mb-[14px] text-[1.05rem]">
+            {t('contact.desc')}
+          </p>
           <div className="flex flex-col gap-1.5">
             <label className="font-sharetech text-[0.72rem] text-muted tracking-[2px]">{t('contact.name')}</label>
             <input type="text" name="name" className="bg-bg2 border border-border rounded p-[12px_16px] text-white font-rajdhani text-[1rem] outline-none focus:border-cyan focus:shadow-[0_0_0_2px_rgba(0,255,231,0.05)] transition-all" />

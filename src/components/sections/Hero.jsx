@@ -8,12 +8,12 @@ export default function Hero() {
   const [typedText, setTypedText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  
+
   useEffect(() => {
     if (!Array.isArray(phrases) || phrases.length === 0) return;
-    
+
     const currentPhrase = phrases[phraseIndex];
-    
+
     let timer;
     if (isDeleting) {
       timer = setTimeout(() => {
@@ -31,7 +31,7 @@ export default function Hero() {
         }
       }, 100); // Vitesse de frappe
     }
-    
+
     return () => clearTimeout(timer);
   }, [typedText, isDeleting, phraseIndex, phrases]);
 
@@ -43,20 +43,20 @@ export default function Hero() {
           <p className="font-sharetech text-[0.8rem] text-green tracking-[5px] text-glow-green mb-4">
             // {t('hero.init')}
           </p>
-          
+
           <h1 className="font-orbitron text-[clamp(2rem,5vw,4.5rem)] font-black text-white leading-[1.1] mb-5">
             Roesnay Gwladferson <span className="text-cyan text-glow-cyan">WENON</span>
           </h1>
-          
+
           <div className="font-sharetech text-[clamp(1rem,2vw,1.35rem)] text-cyan text-glow-cyan h-[2em] flex items-center gap-[10px] mb-[36px]">
             <span>{typedText}</span>
             <span className="inline-block w-[2px] h-[1.1em] bg-cyan shadow-glow-c animate-pulse"></span>
           </div>
-          
+
           <p className="max-w-[540px] text-white text-[1.05rem] mb-[44px]">
             {t('hero.desc')}
           </p>
-          
+
           <div className="flex gap-4 flex-wrap">
             <a href="#projects" className="font-sharetech text-[0.85rem] tracking-[2px] px-8 py-[14px] rounded-[3px] border border-cyan text-cyan hover:bg-cyan/5 hover:shadow-[0_0_8px_rgba(0,255,231,0.15)] transition-all flex items-center gap-2">
               {t('hero.btnProjects')}
@@ -65,7 +65,7 @@ export default function Hero() {
               {t('hero.btnContact')}
             </a>
           </div>
-          
+
           <div className="flex gap-[50px] mt-[60px] flex-wrap">
             <div className="text-center">
               <div className="font-orbitron text-[2rem] font-bold text-cyan">17</div>
@@ -83,8 +83,8 @@ export default function Hero() {
         </div>
 
         {/* Photo de profil à droite */}
-        <div className="hidden md:flex justify-center items-center">
-          <div className="rounded-xl overflow-hidden" style={{boxShadow: 'none', border: 'none', background: 'transparent'}}>
+        <div className="flex justify-center items-center mt-[20px] md:mt-0">
+          <div className="w-full rounded-xl overflow-hidden" style={{ boxShadow: 'none', border: 'none', background: 'transparent' }}>
             <ProfileHoverCard />
           </div>
         </div>
