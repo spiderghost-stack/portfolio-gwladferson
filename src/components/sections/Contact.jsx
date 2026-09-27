@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, Send } from 'lucide-react';
+import SocialCard from '../SocialCard';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -36,6 +37,10 @@ export default function Contact() {
               <a href="https://wa.me/22901530795​76" target="_blank" rel="noopener noreferrer" className="ml-auto font-sharetech text-[0.7rem] px-3 py-1 border border-green text-green rounded hover:bg-green/5 hover:shadow-[0_0_6px_rgba(0,255,136,0.1)] transition-all">{t('contact.chat')}</a>
             </li>
           </ul>
+          
+          <div className="mt-[40px] flex justify-start">
+            <SocialCard />
+          </div>
         </div>
         
         <form className="flex flex-col gap-4" action={`mailto:gwladferson@gmail.com`} method="POST" encType="text/plain">

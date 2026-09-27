@@ -3,12 +3,13 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 import DesignDetail from './pages/DesignDetail';
+import BackgroundPattern from './components/BackgroundPattern';
 
 function App() {
   return (
     <Router>
       <div className="relative min-h-screen">
-        <canvas id="bg-canvas" className="fixed inset-0 z-0 pointer-events-none"></canvas>
+        <BackgroundPattern />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

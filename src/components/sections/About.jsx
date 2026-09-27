@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <section id="about" className="relative z-10 px-[8vw] py-[100px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-stretch">
         {/* Colonne Gauche - STICKY */}
         <div className="md:sticky md:top-[120px] self-start">
           <p className="font-sharetech text-[0.75rem] text-green tracking-[4px] uppercase mb-[10px] text-glow-green">
@@ -15,7 +15,7 @@ export default function About() {
           <h2 className="font-orbitron text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-[50px] leading-[1.2]">
             {t('about.title')} <span className="text-cyan text-glow-cyan">{t('about.titleHighlight')}</span>
           </h2>
-          <div className="text-muted text-[1.05rem] space-y-5">
+          <div className="text-white text-[1.05rem] space-y-5">
             <p>{t('about.text1')}</p>
             <p>{t('about.text2')}</p>
             <p>{t('about.text3')}</p>
@@ -31,21 +31,16 @@ export default function About() {
           </div>
         </div>
         
-        <div className="flex flex-col gap-8">
-          {/* Profile Card */}
-          <div className="bg-bg2 border border-border rounded-lg overflow-hidden shadow-[0_0_20px_rgba(0,255,231,0.03)] p-4 flex flex-col items-center justify-center">
-             <img src="/assets/profile.png" alt="Gwladferson Wenon — Étudiant en Physique Fondamentale, développeur web et graphiste designer" className="w-full h-auto rounded object-cover object-top max-h-[400px]" />
-          </div>
-
+        <div className="flex flex-col h-full">
           {/* Terminal */}
-          <div className="bg-bg2 border border-border rounded-lg overflow-hidden shadow-[0_0_20px_rgba(0,255,231,0.03)]">
+          <div className="bg-bg2 border border-border rounded-lg overflow-hidden shadow-[0_0_20px_rgba(0,255,231,0.03)] flex flex-col flex-1">
             <div className="bg-dim px-4 py-2.5 flex items-center gap-2">
               <span className="w-[11px] h-[11px] rounded-full bg-[#ff5f57]"></span>
               <span className="w-[11px] h-[11px] rounded-full bg-[#febc2e]"></span>
               <span className="w-[11px] h-[11px] rounded-full bg-[#28c840]"></span>
               <span className="font-sharetech text-[0.75rem] text-muted mx-auto tracking-[2px]">profile.sh</span>
             </div>
-            <div className="p-6 font-sharetech text-[0.82rem] leading-loose">
+            <div className="p-6 font-sharetech text-[0.82rem] leading-loose flex-1">
               <div className="flex gap-2.5"><span className="text-green">$</span><span className="text-text"> cat profil.json</span></div>
               <div className="text-muted pl-5">{`{ `}<span className="text-cyan">"nom"</span>: "{t('about.termName')}",</div>
               <div className="text-muted pl-5">&nbsp;&nbsp;<span className="text-cyan">"statut"</span>: "{t('about.termStatus')}",</div>

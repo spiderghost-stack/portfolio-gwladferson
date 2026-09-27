@@ -31,13 +31,17 @@
 
 @layer utilities {
   .text-glow-cyan {
-    text-shadow: var(--glow-c);
+    text-shadow: none;
   }
   .text-glow-green {
-    text-shadow: var(--glow-g);
+    text-shadow: none;
   }
   .box-glow-cyan {
-    box-shadow: var(--glow-c);
+    box-shadow: none;
+  }
+  .shadow-glow-c {
+    box-shadow: none;
+    text-shadow: none;
   }
   .bg-dim {
     background-color: var(--dim);

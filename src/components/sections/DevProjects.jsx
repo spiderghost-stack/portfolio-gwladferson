@@ -44,7 +44,7 @@ export default function DevProjects() {
         // {t('dev.tag')}
       </p>
       <h2 className="font-orbitron text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-[50px] leading-[1.2]">
-        {t('dev.title')} <span className="text-blue shadow-glow-c">{t('dev.titleHighlight')}</span>
+        {t('dev.title')} <span className="text-blue">{t('dev.titleHighlight')}</span>
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[28px]">
